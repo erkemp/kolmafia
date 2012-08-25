@@ -390,11 +390,6 @@ public abstract class KoLmafia
 		tab.CloseTabPaneEnhancedUI.notifiedA = DataUtilities.toColor( Preferences.getString( "innerChatColor" ) );
 		tab.CloseTabPaneEnhancedUI.notifiedB = DataUtilities.toColor( Preferences.getString( "outerChatColor" ) );
 
-		if ( !KoLmafia.acquireFileLock( "1" ) && !KoLmafia.acquireFileLock( "2" ) )
-		{
-			System.exit( -1 );
-		}
-
 		FlaggedItems.initializeLists();
 
 		// Now run the main routines for each, so that
