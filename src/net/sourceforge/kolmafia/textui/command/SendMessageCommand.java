@@ -139,7 +139,6 @@ public class SendMessageCommand
 
 		if ( meatAmount > 0 )
 		{
-			meatAmount = BuffBotDatabase.getOffering( recipient, meatAmount );
 			AdventureResult.addResultToList( attachmentList, new AdventureResult( AdventureResult.MEAT, meatAmount ) );
 		}
 
