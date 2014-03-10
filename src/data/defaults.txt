@@ -6,6 +6,7 @@ global	allowCloseableDesktopTabs	false
 global	allowNegativeTally	true
 global	allowNonMoodBurning	true
 global	allowSummonBurning	true
+global	answerScriptNotifyRequests	false
 global	autoLogin
 global	allowSocketTimeout	false
 global	autoHighlightOnFocus	true

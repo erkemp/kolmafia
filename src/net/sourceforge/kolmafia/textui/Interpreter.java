@@ -307,7 +307,7 @@ public class Interpreter
 		String notifyList = Preferences.getString( "previousNotifyList" );
 		String notifyRecipient = this.parser.getNotifyRecipient();
 
-		if ( notifyRecipient != null && notifyList.indexOf( currentScript ) == -1 )
+		if ( Preferences.getBoolean( "answerScriptNotifyRequests" ) && notifyRecipient != null && notifyList.indexOf( currentScript ) == -1 )
 		{
 			Preferences.setString( "previousNotifyList", notifyList + currentScript );
 
